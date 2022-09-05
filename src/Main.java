@@ -8,7 +8,7 @@ public class Main {
 
         Apple apple = new Apple();
         Banana banana = new Banana();
-        orange.putFruit();
+        bucket.putFruit(orange);
         orange.showFruits();
 
 
