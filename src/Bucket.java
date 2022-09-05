@@ -1,23 +1,30 @@
 import java.util.ArrayList;
 
 public class Bucket {
+String fruit;
+   private ArrayList<String> bucket = new ArrayList<>();
 
-    ArrayList<String> fruits = new ArrayList<>();
-    String fruit;
+
+    public ArrayList<String> getBucket() {
+        return bucket;
+    }
+
+    public void setBucket(ArrayList<String> bucket) {
+        this.bucket = bucket;
+    }
 
     public String putFruit(String fruit) {
-        fruits.add(fruit);
-        this.fruit=fruit;
-        return fruit;
+        bucket.add(fruit);
     }
 
     public String takeFruit (String fruit) {
-        fruits.remove(0);
+        bucket.remove(0);
         return fruit;
     }
 
     public void showFruits () {
-        System.out.println(fruits);
+        System.out.println("Now in your bucket: " + bucket);
     }
+
 }
 
